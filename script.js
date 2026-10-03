@@ -17,6 +17,11 @@ let urls = [
 
 let acts = ['ACT I', 'ACT II', 'ACT III', 'ACT IV'];
 
+
+
+
+
+
 function run() {
   if (typeof anime !== 'undefined') {
     anime({
@@ -59,6 +64,14 @@ function run() {
   }
 }
 
+
+
+
+
+
+
+
+
 window.addEventListener('DOMContentLoaded', run);
 
 document.addEventListener('mousemove', (e) => {
@@ -76,6 +89,10 @@ function draw() {
   requestAnimationFrame(draw);
 }
 draw();
+
+
+
+
 
 let pairs = Array.from(document.querySelectorAll('.line-pair'));
 

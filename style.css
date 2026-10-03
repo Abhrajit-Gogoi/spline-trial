@@ -5,12 +5,18 @@
   cursor:none
 }
 
+
+
+
 body {
   background-color: #050505;
   color: #fff;
   font-family: system-ui, -apple-system, sans-serif;
   overflow-x: hidden;
 }
+
+
+
 
 #loader {
   position: fixed;
@@ -26,6 +32,18 @@ body {
   z-index: 999;
 }
 
+
+
+
+
+
+
+
+
+
+
+
+
 .load-txt {
   font-size: 1.2rem;
   letter-spacing: 3px;
@@ -33,6 +51,13 @@ body {
   text-transform: uppercase;
   color: #ccc;
 }
+
+
+
+
+
+
+
 
 .bar-bg {
   width: 240px;
@@ -42,12 +67,24 @@ body {
   overflow: hidden;
 }
 
+
+
+
+
 .bar-fill {
   width: 0%;
   height: 100%;
   background: #fff;
   border-radius: 10px;
 }
+
+
+
+
+
+
+
+
 
 .hero {
   height: 100vh;
@@ -58,6 +95,11 @@ body {
   opacity: 0;
   transform: translateY(20px);
 }
+
+
+
+
+
 
 .title {
   font-size: 10rem;
@@ -114,6 +156,24 @@ body {
   gap: 50vh;
 }
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 .line-pair {
   height: 30vh;
   display: flex;
@@ -126,6 +186,14 @@ body {
   transform: translateY(40px);
   transition: all 0.8s ease-out;
 }
+
+
+
+
+
+
+
+
 
 .line-pair.actv {
   opacity: 1;
@@ -168,6 +236,12 @@ body {
 }
 
 
+
+
+
+
+
+
 .act-ind {
   position: fixed;
   top: 30px;
@@ -178,6 +252,14 @@ body {
   color: rgba(255, 255, 255, 0.5);
   z-index: 10;
 }
+
+
+
+
+
+
+
+
 
 .ftr {
   height: 50vh;
