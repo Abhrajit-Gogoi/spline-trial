@@ -1,0 +1,194 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  cursor:none
+}
+
+body {
+  background-color: #050505;
+  color: #fff;
+  font-family: system-ui, -apple-system, sans-serif;
+  overflow-x: hidden;
+}
+
+#loader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: #000;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  z-index: 999;
+}
+
+.load-txt {
+  font-size: 1.2rem;
+  letter-spacing: 3px;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+  color: #ccc;
+}
+
+.bar-bg {
+  width: 240px;
+  height: 8px;
+  background: #222;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.bar-fill {
+  width: 0%;
+  height: 100%;
+  background: #fff;
+  border-radius: 10px;
+}
+
+.hero {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  transform: translateY(20px);
+}
+
+.title {
+  font-size: 10rem;
+  font-weight: 900;
+  letter-spacing: 12px;
+}
+
+.sub {
+  font-size: 1.5rem;
+  letter-spacing: 4px;
+  color: #888;
+  margin-top: -10px;
+  text-transform: uppercase;
+}
+
+.scroll-down {
+  position: absolute;
+  bottom: 40px;
+  font-size: 0.9rem;
+  letter-spacing: 2px;
+  color: #666;
+  animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+  0%, 100% { opacity: 0.4; }
+  50% { opacity: 1; }
+}
+
+
+.glass-cursor {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.04);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  box-shadow: 0 8px 32px 0 rgba(180, 177, 177, 0.4);
+  pointer-events: none;
+  z-index: 1000;
+  transform: translate(-50%, -50%);
+}
+
+
+
+.poem-sec {
+  padding: 100px 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 50vh;
+}
+
+.line-pair {
+  height: 30vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  opacity: 0;
+  filter: blur(12px);
+  transform: translateY(40px);
+  transition: all 0.8s ease-out;
+}
+
+.line-pair.actv {
+  opacity: 1;
+  filter: blur(0px);
+  transform: translateY(0);
+}
+
+.line {
+  font-size: 2rem;
+  font-weight: 300;
+  line-height: 1.6;
+  color: #eaeaea;
+} 
+
+
+
+
+
+
+
+
+
+
+
+
+
+#spl {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: 0;
+  pointer-events: none;
+}
+
+.hero, .poem-sec {
+  position: relative;
+  z-index: 1;
+}
+
+
+.act-ind {
+  position: fixed;
+  top: 30px;
+  right: 30px;
+  font-size: 0.85rem;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  color: rgba(255, 255, 255, 0.5);
+  z-index: 10;
+}
+
+.ftr {
+  height: 50vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  z-index: 1;
+  color: #555;
+  font-size: 0.9rem;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+}
+
